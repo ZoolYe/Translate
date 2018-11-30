@@ -24,7 +24,13 @@
 
     <actions>
         <group id="ZoolPlugin.Menu" text="ZOOL" description="ZOOL Menu">
+
             <add-to-group group-id="MainMenu" anchor="last"/>
+            <add-to-group group-id="BasicEditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="first"/>
+            <add-to-group group-id="Diff.EditorPopupMenu" anchor="first"/>
+
             <action class="zool.action.TranslateAction" id="Translate.TranslateAction" text="Translate">
                 <keyboard-shortcut first-keystroke="shift alt Z" keymap="$default"/>
             </action>
