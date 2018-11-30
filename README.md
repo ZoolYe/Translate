@@ -1,7 +1,7 @@
 TranslatePlugin
 ===============
 
-###JetBrains IDE 翻译插件
+### JetBrains IDE 翻译插件
 
 介绍
 ---
