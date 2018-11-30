@@ -14,7 +14,7 @@ TranslatePlugin
 
 ### 安装步骤:
 
-1、下载插件包[Translate.zip]()
+1、下载插件包[Translate.zip](https://raw.githubusercontent.com/ZoolYe/Translate/master/translate-0.1.zip)
 
 2、<kbd>File</kbd> > <kbd>Settings</kbd> > <kbd>plugins</kbd> > <kbd>Install plugin from disk...</kbd> > <kbd> OK</kbd>
 
