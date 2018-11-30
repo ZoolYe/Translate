@@ -1,0 +1,33 @@
+<idea-plugin>
+
+    <id>com.zool.plugins.translate</id>
+    <name>Translate</name>
+    <version>0.1</version>
+    <vendor email="www.iphone@foxmail.com" url="http://www.zoolye.com">联系方式</vendor>
+
+    <description><![CDATA[
+      中英文翻译:<br>
+      对于英语不好的同学来说这是一个神器<br>
+      使用的是网易有道的翻译API.<br>
+      <em></em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      0.1 第一个版本(只支持中英文翻译).<br>
+      <em></em>
+    ]]>
+    </change-notes>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="ZoolPlugin.Menu" text="ZOOL" description="ZOOL Menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="zool.action.TranslateAction" id="Translate.TranslateAction" text="Translate">
+                <keyboard-shortcut first-keystroke="shift alt Z" keymap="$default"/>
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
