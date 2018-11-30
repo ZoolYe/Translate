@@ -7,6 +7,7 @@ TranslatePlugin
 ---
 - 使用网易有道翻译API
 - 支持中英文互翻
+- 支持鼠标右键选词翻译
 - 操作简单（快捷键）<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd>
 
 ![screenshots](./images/translate.jpg)

@@ -6,11 +6,28 @@
     <vendor email="www.iphone@foxmail.com" url="http://www.zoolye.com">联系方式</vendor>
 
     <description><![CDATA[
-      中英文翻译:<br>
-      对于英语不好的同学来说这是一个神器<br>
-      使用的是网易有道的翻译API.<br>
-      <em></em>
+
+      <h1>Translate</h1><br/>
+
+      <b>
+        <a href="http://www.zoolye.com">个人网站</a> |
+        <a href="https://github.com/ZoolYe/Translate">GitHub</a>
+      </b>
+
+      <ul>
+        <li>JetBrains IDE 翻译插件:</li>
+        <li>支持中英文互翻</li>
+        <li>使用网易有道翻译API</li>
+        <li>支持鼠标右键选词翻译</li>
+        <li>操作简单（快捷键）Alt + Shift + Z </li>
+      </ul>
+
+      <p>
+        <img src="https://raw.githubusercontent.com/ZoolYe/Translate/master/images/translate.jpg"
+      </p>
     ]]></description>
+
+
 
     <change-notes><![CDATA[
       0.1 第一个版本(只支持中英文翻译).<br>
