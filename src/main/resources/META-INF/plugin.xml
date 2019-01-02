@@ -27,8 +27,6 @@
       </p>
     ]]></description>
 
-
-
     <change-notes><![CDATA[
       0.3 第一个版本(只支持中英文翻译).<br>
       Only support Chinese and English.<br>
@@ -55,7 +53,5 @@
             </action>
         </group>
     </actions>
-
-    <idea-version since-build="171" until-build=""/>
 
 </idea-plugin>

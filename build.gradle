@@ -21,6 +21,10 @@ intellij {
     version '2018.3.2'
 }
 
+patchPluginXml {
+    sinceBuild '171'
+}
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
