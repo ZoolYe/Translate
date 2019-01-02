@@ -14,8 +14,8 @@ public class SeparateString {
      * @return
      */
     public static String separateString(String str) {
-
-        if (!str.matches(".*?[A-Z].*?")) {
+        //.*?[A-Z].*?
+        if (!str.matches("[A-Z]?[a-z]+[A-Z].*?")) {
             return str;
         }
         StringBuilder sb = new StringBuilder();
