@@ -13,32 +13,24 @@ import java.net.URL;
  */
 public class HttpUtil {
 
-    public static String getJosnByInternet(String path){
-        try {
+    public static String getJosnByInternet(String path) throws IOException {
 
-            URL url = new URL(path);
+        URL url = new URL(path);
 
-            //打开连接
-            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+        //打开连接
+        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
-            if (200 == urlConnection.getResponseCode()){
-                InputStream is = urlConnection.getInputStream();
-                ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                byte[] buffer = new byte[1024];
-                int len;
-                while (-1 !=(len = is.read(buffer))){
-                    baos.write(buffer,0,len);
-                    baos.flush();
-                }
-                return baos.toString("UTF-8");
+        if (200 == urlConnection.getResponseCode()) {
+            InputStream is = urlConnection.getInputStream();
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            int len;
+            while (-1 != (len = is.read(buffer))) {
+                baos.write(buffer, 0, len);
+                baos.flush();
             }
-
-        } catch (IOException e) {
-            e.printStackTrace();
+            return baos.toString("UTF-8");
         }
         return null;
     }
-
-
-
 }

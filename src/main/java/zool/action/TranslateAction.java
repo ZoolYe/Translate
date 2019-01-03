@@ -17,6 +17,7 @@ import zool.utils.http.HttpUtil;
 import zool.utils.string.SeparateString;
 
 import java.awt.*;
+import java.io.IOException;
 
 /**
  * @author : zoolye
@@ -48,7 +49,13 @@ public class TranslateAction extends AnAction {
         String url = BuildingURL.buildingURL(separateString);
 
         //获取翻译内容json格式
-        String josn = HttpUtil.getJosnByInternet(url);
+        String josn;
+        try {
+            josn = HttpUtil.getJosnByInternet(url);
+        } catch (IOException e1) {
+            showPopupBalloon(mEditor,"网络异常请重试 ...");
+            return;
+        }
 
         //将获取到的json数据转成Translate对象
         String s = jsonToTranslate(josn);
